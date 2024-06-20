@@ -1,8 +1,7 @@
 
 package net.icefighter.mobsbrawl.item;
 
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.Item;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class IceItem extends Item {
 	public IceItem() {
