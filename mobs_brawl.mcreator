@@ -1,10 +1,26 @@
 {
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Tes",
+      "type": "item",
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tes",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mobs_brawl/models/item/tes.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/TesItem.java"
+        ]
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.mobs_brawl.tes": "Tes"
+    }
   },
   "foldersRoot": {
     "name": "~",
