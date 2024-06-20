@@ -1,43 +1,6 @@
 {
   "mod_elements": [
     {
-      "name": "BlazeSelector",
-      "type": "item",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blaze_selector",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json"
-        ]
-      }
-    },
-    {
-      "name": "BlazeSelectorRightclicked",
-      "type": "procedure",
-      "sortid": 3,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blaze_selector_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/BlazeSelectorRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      }
-    },
-    {
       "name": "FireboltRightclicked",
       "type": "procedure",
       "sortid": 4,
@@ -88,6 +51,61 @@
         "files": [
           "src/main/java/net/icefighter/mobsbrawl/item/FireboltItem.java",
           "src/main/resources/assets/mobs_brawl/models/item/firebolt.json"
+        ]
+      },
+      "path": "~/blaze"
+    },
+    {
+      "name": "BlazeSelectorRightclicked",
+      "type": "procedure",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_selector_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/BlazeSelectorRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blaze"
+    },
+    {
+      "name": "BlazeSelector",
+      "type": "item",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json"
         ]
       },
       "path": "~/blaze"
