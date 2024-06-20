@@ -8,8 +8,8 @@
       "registry_name": "ice",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mobs_brawl/models/item/ice.json",
-          "src/main/java/net/icefighter/mobsbrawl/item/IceItem.java"
+          "src/main/java/net/icefighter/mobsbrawl/item/IceItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/ice.json"
         ]
       }
     }
@@ -19,7 +19,7 @@
   "tag_elements": {},
   "language_map": {
     "en_us": {
-      "item.mobs_brawl.ice": "Ice"
+      "item.mobs_brawl.ice": "Ice item"
     }
   },
   "foldersRoot": {
