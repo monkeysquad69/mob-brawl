@@ -1,26 +1,10 @@
 {
-  "mod_elements": [
-    {
-      "name": "Ice",
-      "type": "item",
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "ice",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/IceItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/ice.json"
-        ]
-      }
-    }
-  ],
+  "mod_elements": [],
   "variable_elements": [],
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {
-      "item.mobs_brawl.ice": "Ice item"
-    }
+    "en_us": {}
   },
   "foldersRoot": {
     "name": "~",
