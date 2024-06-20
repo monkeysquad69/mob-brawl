@@ -111,16 +111,16 @@
       "path": "~/blaze"
     },
     {
-      "name": "PiglinSelector",
+      "name": "Trade",
       "type": "item",
-      "sortid": 8,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "piglin_selector",
+      "registry_name": "trade",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/PiglinSelectorItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/piglin_selector.json"
+          "src/main/resources/assets/mobs_brawl/models/item/trade.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/TradeItem.java"
         ]
       },
       "path": "~/piglin"
@@ -166,16 +166,16 @@
       "path": "~/piglin"
     },
     {
-      "name": "Trade",
+      "name": "PiglinSelector",
       "type": "item",
-      "sortid": 10,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "trade",
+      "registry_name": "piglin_selector",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mobs_brawl/models/item/trade.json",
-          "src/main/java/net/icefighter/mobsbrawl/item/TradeItem.java"
+          "src/main/java/net/icefighter/mobsbrawl/item/PiglinSelectorItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/piglin_selector.json"
         ]
       },
       "path": "~/piglin"
@@ -236,11 +236,11 @@
     "name": "~",
     "children": [
       {
-        "name": "blaze",
+        "name": "piglin",
         "children": []
       },
       {
-        "name": "piglin",
+        "name": "blaze",
         "children": []
       }
     ]

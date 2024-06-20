@@ -20,8 +20,8 @@ public class MobsBrawlModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, MobsBrawlMod.MODID);
 	public static final RegistryObject<Item> FIREBOLT = REGISTRY.register("firebolt", () -> new FireboltItem());
 	public static final RegistryObject<Item> BLAZE_SELECTOR = REGISTRY.register("blaze_selector", () -> new BlazeSelectorItem());
-	public static final RegistryObject<Item> PIGLIN_SELECTOR = REGISTRY.register("piglin_selector", () -> new PiglinSelectorItem());
 	public static final RegistryObject<Item> TRADE = REGISTRY.register("trade", () -> new TradeItem());
+	public static final RegistryObject<Item> PIGLIN_SELECTOR = REGISTRY.register("piglin_selector", () -> new PiglinSelectorItem());
 	// Start of user code block custom items
 	// End of user code block custom items
 }
