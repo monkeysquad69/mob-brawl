@@ -61,6 +61,9 @@
       "locked_code": false,
       "registry_name": "firebolt_rightclicked",
       "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/FireboltRightclickedProcedure.java"
+        ],
         "dependencies": [
           {
             "name": "entity",
@@ -132,6 +135,116 @@
         ],
         "dependencies": []
       }
+    },
+    {
+      "name": "Trade",
+      "type": "item",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mobs_brawl/models/item/trade.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/TradeItem.java"
+        ]
+      },
+      "path": "~/piglin"
+    },
+    {
+      "name": "TradeRightclicked",
+      "type": "procedure",
+      "sortid": 9,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "trade_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/TradeRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/piglin"
+    },
+    {
+      "name": "PiglinSelector",
+      "type": "item",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piglin_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/item/PiglinSelectorItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/piglin_selector.json"
+        ]
+      },
+      "path": "~/piglin"
+    },
+    {
+      "name": "PiglinSelectorRightclicked",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "piglin_selector_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/PiglinSelectorRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/piglin"
     }
   ],
   "variable_elements": [],
@@ -140,13 +253,16 @@
   "language_map": {
     "en_us": {
       "item.mobs_brawl.blaze_selector": "Blaze Selector",
-      "item.mobs_brawl.creeper_selector": "Creeper Selector",
       "item.mobs_brawl.firebolt": "Firebolt"
     }
   },
   "foldersRoot": {
     "name": "~",
     "children": [
+      {
+        "name": "piglin",
+        "children": []
+      },
       {
         "name": "blaze",
         "children": []

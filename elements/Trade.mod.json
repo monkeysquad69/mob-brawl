@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "fire_charge",
+    "texture": "gold_ingot",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Firebolt",
+    "name": "Trade",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "COMBAT"
@@ -36,7 +36,7 @@
     "inventorySize": 9,
     "inventoryStackSize": 64,
     "onRightClickedInAir": {
-      "name": "FireboltRightclicked"
+      "name": "TradeRightclicked"
     },
     "enableRanged": false,
     "shootConstantly": false,

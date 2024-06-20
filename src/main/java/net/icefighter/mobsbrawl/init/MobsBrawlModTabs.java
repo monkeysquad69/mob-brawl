@@ -25,6 +25,8 @@ public class MobsBrawlModTabs {
 			tabData.accept(MobsBrawlModItems.BLAZE_SELECTOR.get());
 			tabData.accept(MobsBrawlModItems.FIREBOLT.get());
 			tabData.accept(MobsBrawlModItems.CREEPER_SELECTOR.get());
+			tabData.accept(MobsBrawlModItems.PIGLIN_SELECTOR.get());
+			tabData.accept(MobsBrawlModItems.TRADE.get());
 		}
 	}
 }
