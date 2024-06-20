@@ -24,6 +24,8 @@ public class MobsBrawlModTabs {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(MobsBrawlModItems.FIREBOLT.get());
 			tabData.accept(MobsBrawlModItems.BLAZE_SELECTOR.get());
+			tabData.accept(MobsBrawlModItems.PIGLIN_SELECTOR.get());
+			tabData.accept(MobsBrawlModItems.TRADE.get());
 		}
 	}
 }
