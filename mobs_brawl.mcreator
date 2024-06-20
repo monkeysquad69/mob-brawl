@@ -36,6 +36,61 @@
           }
         ]
       }
+    },
+    {
+      "name": "FireboltRightclicked",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firebolt_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/FireboltRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/blaze"
+    },
+    {
+      "name": "Firebolt",
+      "type": "item",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "firebolt",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/item/FireboltItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/firebolt.json"
+        ]
+      },
+      "path": "~/blaze"
     }
   ],
   "variable_elements": [],
@@ -43,12 +98,18 @@
   "tag_elements": {},
   "language_map": {
     "en_us": {
-      "item.mobs_brawl.blaze_selector": "Blaze Selector"
+      "item.mobs_brawl.blaze_selector": "Blaze Selector",
+      "item.mobs_brawl.firebolt": "Firebolt"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "blaze",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "mobs_brawl",
