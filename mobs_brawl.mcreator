@@ -9,8 +9,8 @@
       "registry_name": "blaze_selector",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json"
+          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java"
         ]
       }
     },
