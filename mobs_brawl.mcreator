@@ -61,9 +61,6 @@
       "locked_code": false,
       "registry_name": "firebolt_rightclicked",
       "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/FireboltRightclickedProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -107,6 +104,34 @@
         ]
       },
       "path": "~/blaze"
+    },
+    {
+      "name": "CreeperSelector",
+      "type": "item",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_selector",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/item/CreeperSelectorItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/creeper_selector.json"
+        ]
+      }
+    },
+    {
+      "name": "CreeperSelectorRightclicked",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_selector_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/CreeperSelectorRightclickedProcedure.java"
+        ],
+        "dependencies": []
+      }
     }
   ],
   "variable_elements": [],
@@ -115,6 +140,7 @@
   "language_map": {
     "en_us": {
       "item.mobs_brawl.blaze_selector": "Blaze Selector",
+      "item.mobs_brawl.creeper_selector": "Creeper Selector",
       "item.mobs_brawl.firebolt": "Firebolt"
     }
   },
