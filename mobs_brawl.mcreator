@@ -3,26 +3,37 @@
     {
       "name": "BlazeSelector",
       "type": "item",
+      "sortid": 2,
       "compiles": true,
       "locked_code": false,
       "registry_name": "blaze_selector",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json",
-          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java"
+          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json"
         ]
       }
     },
     {
-      "name": "Tes",
-      "type": "item",
+      "name": "BlazeSelectorRightclicked",
+      "type": "procedure",
+      "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tes",
+      "registry_name": "blaze_selector_rightclicked",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mobs_brawl/models/item/tes.json",
-          "src/main/java/net/icefighter/mobsbrawl/item/TesItem.java"
+          "src/main/java/net/icefighter/mobsbrawl/procedures/BlazeSelectorRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
         ]
       }
     }
@@ -31,7 +42,9 @@
   "sound_elements": [],
   "tag_elements": {},
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.mobs_brawl.blaze_selector": "Blaze Selector"
+    }
   },
   "foldersRoot": {
     "name": "~",
