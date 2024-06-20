@@ -18,14 +18,17 @@ public class FireboltRightclickedProcedure {
 		if ((entity instanceof Player _plr ? _plr.experienceLevel : 0) >= 3 && (entity instanceof Player _plrCldRem2 ? _plrCldRem2.getCooldowns().getCooldownPercent(itemstack.getItem(), 0f) * 100 : 0) <= 0) {
 			if (world instanceof ServerLevel projectileLevel) {
 				Projectile _entityToSpawn = new Object() {
-					public Projectile getFireball(Level level, Entity shooter) {
+					public Projectile getFireball(Level level, Entity shooter, double ax, double ay, double az) {
 						AbstractHurtingProjectile entityToSpawn = new SmallFireball(EntityType.SMALL_FIREBALL, level);
 						entityToSpawn.setOwner(shooter);
+						entityToSpawn.xPower = ax;
+						entityToSpawn.yPower = ay;
+						entityToSpawn.zPower = az;
 						return entityToSpawn;
 					}
-				}.getFireball(projectileLevel, entity);
-				_entityToSpawn.setPos(x, y, z);
-				_entityToSpawn.shoot(1, 1, 1, 1, 0);
+				}.getFireball(projectileLevel, entity, (entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z));
+				_entityToSpawn.setPos(x, (y + 1), z);
+				_entityToSpawn.shoot((entity.getLookAngle().x), (entity.getLookAngle().y), (entity.getLookAngle().z), 3, 0);
 				projectileLevel.addFreshEntity(_entityToSpawn);
 			}
 			if (entity instanceof Player _player)
