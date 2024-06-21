@@ -10,7 +10,7 @@
     "name": "Tellurium",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "MATERIALS"
+      "value": "CUSTOM:MobBrawl"
     },
     "stackSize": 1,
     "enchantability": 0,

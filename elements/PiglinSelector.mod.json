@@ -10,7 +10,7 @@
     "name": "Piglin Selector",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "CUSTOM:MobBrawl"
     },
     "stackSize": 1,
     "enchantability": 0,
