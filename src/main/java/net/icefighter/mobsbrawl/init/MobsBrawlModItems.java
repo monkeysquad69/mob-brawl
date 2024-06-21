@@ -16,6 +16,7 @@ import net.icefighter.mobsbrawl.item.TradeItem;
 import net.icefighter.mobsbrawl.item.TelluriumItem;
 import net.icefighter.mobsbrawl.item.PiglinSelectorItem;
 import net.icefighter.mobsbrawl.item.FireboltItem;
+import net.icefighter.mobsbrawl.item.CreeperSelectorItem;
 import net.icefighter.mobsbrawl.item.BlazeSelectorItem;
 import net.icefighter.mobsbrawl.MobsBrawlMod;
 
@@ -25,8 +26,9 @@ public class MobsBrawlModItems {
 	public static final RegistryObject<Item> BLAZE_SELECTOR = REGISTRY.register("blaze_selector", () -> new BlazeSelectorItem());
 	public static final RegistryObject<Item> TRADE = REGISTRY.register("trade", () -> new TradeItem());
 	public static final RegistryObject<Item> PIGLIN_SELECTOR = REGISTRY.register("piglin_selector", () -> new PiglinSelectorItem());
-	public static final RegistryObject<Item> TELLURIUM = REGISTRY.register("tellurium", () -> new TelluriumItem());
 	public static final RegistryObject<Item> TELLURIUM_ORE = block(MobsBrawlModBlocks.TELLURIUM_ORE);
+	public static final RegistryObject<Item> TELLURIUM = REGISTRY.register("tellurium", () -> new TelluriumItem());
+	public static final RegistryObject<Item> CREEPER_SELECTOR = REGISTRY.register("creeper_selector", () -> new CreeperSelectorItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

@@ -221,16 +221,58 @@
       "path": "~/piglin"
     },
     {
-      "name": "Tellurium",
-      "type": "item",
-      "sortid": 12,
+      "name": "TelluriumOre",
+      "type": "block",
+      "sortid": 15,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tellurium",
+      "registry_name": "tellurium_ore",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/TelluriumItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/tellurium.json"
+          "src/main/resources/assets/mobs_brawl/blockstates/tellurium_ore.json",
+          "src/main/resources/data/mobs_brawl/loot_tables/blocks/tellurium_ore.json",
+          "src/main/java/net/icefighter/mobsbrawl/block/TelluriumOreBlock.java",
+          "src/main/resources/assets/mobs_brawl/models/item/tellurium_ore.json",
+          "src/main/resources/assets/mobs_brawl/models/block/tellurium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "AntiDrop",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_drop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/AntiDropProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
         ]
       }
     },
@@ -289,59 +331,45 @@
       }
     },
     {
-      "name": "TelluriumOre",
-      "type": "block",
-      "sortid": 15,
+      "name": "Tellurium",
+      "type": "item",
+      "sortid": 12,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "tellurium_ore",
+      "registry_name": "tellurium",
       "metadata": {
         "files": [
-          "src/main/resources/assets/mobs_brawl/blockstates/tellurium_ore.json",
-          "src/main/resources/data/mobs_brawl/loot_tables/blocks/tellurium_ore.json",
-          "src/main/java/net/icefighter/mobsbrawl/block/TelluriumOreBlock.java",
-          "src/main/resources/assets/mobs_brawl/models/item/tellurium_ore.json",
-          "src/main/resources/assets/mobs_brawl/models/block/tellurium_ore.json"
+          "src/main/java/net/icefighter/mobsbrawl/item/TelluriumItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/tellurium.json"
         ]
       }
     },
     {
-      "name": "AntiDrop",
-      "type": "procedure",
-      "sortid": 16,
+      "name": "CreeperSelector",
+      "type": "item",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "anti_drop",
+      "registry_name": "creeper_selector",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/AntiDropProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
+          "src/main/resources/assets/mobs_brawl/models/item/creeper_selector.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/CreeperSelectorItem.java"
         ]
+      }
+    },
+    {
+      "name": "CreeperSelectorRightclicked",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_selector_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/CreeperSelectorRightclickedProcedure.java"
+        ],
+        "dependencies": []
       }
     }
   ],
@@ -358,11 +386,7 @@
   "language_map": {
     "en_us": {
       "item.mobs_brawl.blaze_selector": "Blaze Selector",
-      "item.mobs_brawl.tellurium": "Tellurium",
-      "block.mobs_brawl.tellurium_ore": "Tellurium Ore",
-      "item.mobs_brawl.trade": "Trade",
-      "item.mobs_brawl.firebolt": "Firebolt",
-      "item.mobs_brawl.piglin_selector": "Piglin Selector"
+      "item.mobs_brawl.firebolt": "Firebolt"
     }
   },
   "foldersRoot": {

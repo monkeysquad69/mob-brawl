@@ -23,6 +23,7 @@ public class MobsBrawlModTabs {
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(MobsBrawlModItems.FIREBOLT.get());
+			tabData.accept(MobsBrawlModItems.CREEPER_SELECTOR.get());
 			tabData.accept(MobsBrawlModItems.BLAZE_SELECTOR.get());
 			tabData.accept(MobsBrawlModItems.PIGLIN_SELECTOR.get());
 			tabData.accept(MobsBrawlModItems.TRADE.get());
