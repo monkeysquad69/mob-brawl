@@ -219,14 +219,147 @@
         ]
       },
       "path": "~/piglin"
+    },
+    {
+      "name": "Tellurium",
+      "type": "item",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/item/TelluriumItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/tellurium.json"
+        ]
+      }
+    },
+    {
+      "name": "TelluriumItemInInventoryTick",
+      "type": "procedure",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_item_in_inventory_tick",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/TelluriumItemInInventoryTickProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TelluriumOreBlockDestroyedByPlayer",
+      "type": "procedure",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_ore_block_destroyed_by_player",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/TelluriumOreBlockDestroyedByPlayerProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
+      "name": "TelluriumOre",
+      "type": "block",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "tellurium_ore",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mobs_brawl/blockstates/tellurium_ore.json",
+          "src/main/resources/data/mobs_brawl/loot_tables/blocks/tellurium_ore.json",
+          "src/main/java/net/icefighter/mobsbrawl/block/TelluriumOreBlock.java",
+          "src/main/resources/assets/mobs_brawl/models/item/tellurium_ore.json",
+          "src/main/resources/assets/mobs_brawl/models/block/tellurium_ore.json"
+        ]
+      }
+    },
+    {
+      "name": "AntiDrop",
+      "type": "procedure",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "anti_drop",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/AntiDropProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
-  "tag_elements": {},
+  "tag_elements": {
+    "BLOCKS:minecraft:mineable/pickaxe": [
+      "~CUSTOM:TelluriumOre"
+    ],
+    "BLOCKS:minecraft:needs_stone_tool": [
+      "~CUSTOM:TelluriumOre"
+    ]
+  },
   "language_map": {
     "en_us": {
       "item.mobs_brawl.blaze_selector": "Blaze Selector",
+      "item.mobs_brawl.tellurium": "Tellurium",
+      "block.mobs_brawl.tellurium_ore": "Tellurium Ore",
       "item.mobs_brawl.trade": "Trade",
       "item.mobs_brawl.firebolt": "Firebolt",
       "item.mobs_brawl.piglin_selector": "Piglin Selector"

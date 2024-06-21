@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.icefighter.mobsbrawl.init.MobsBrawlModTabs;
 import net.icefighter.mobsbrawl.init.MobsBrawlModItems;
+import net.icefighter.mobsbrawl.init.MobsBrawlModBlocks;
 
 import java.util.function.Supplier;
 import java.util.function.Function;
@@ -39,6 +40,8 @@ public class MobsBrawlMod {
 		// End of user code block mod constructor
 		MinecraftForge.EVENT_BUS.register(this);
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+
+		MobsBrawlModBlocks.REGISTRY.register(bus);
 
 		MobsBrawlModItems.REGISTRY.register(bus);
 

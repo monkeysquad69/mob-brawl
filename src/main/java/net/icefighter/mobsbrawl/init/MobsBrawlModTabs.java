@@ -26,6 +26,10 @@ public class MobsBrawlModTabs {
 			tabData.accept(MobsBrawlModItems.BLAZE_SELECTOR.get());
 			tabData.accept(MobsBrawlModItems.PIGLIN_SELECTOR.get());
 			tabData.accept(MobsBrawlModItems.TRADE.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.INGREDIENTS) {
+			tabData.accept(MobsBrawlModItems.TELLURIUM.get());
+		} else if (tabData.getTabKey() == CreativeModeTabs.NATURAL_BLOCKS) {
+			tabData.accept(MobsBrawlModBlocks.TELLURIUM_ORE.get().asItem());
 		}
 	}
 }

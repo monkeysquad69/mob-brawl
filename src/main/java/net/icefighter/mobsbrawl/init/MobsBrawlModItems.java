@@ -8,9 +8,12 @@ import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.DeferredRegister;
 
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.BlockItem;
 
 import net.icefighter.mobsbrawl.item.TradeItem;
+import net.icefighter.mobsbrawl.item.TelluriumItem;
 import net.icefighter.mobsbrawl.item.PiglinSelectorItem;
 import net.icefighter.mobsbrawl.item.FireboltItem;
 import net.icefighter.mobsbrawl.item.BlazeSelectorItem;
@@ -22,6 +25,12 @@ public class MobsBrawlModItems {
 	public static final RegistryObject<Item> BLAZE_SELECTOR = REGISTRY.register("blaze_selector", () -> new BlazeSelectorItem());
 	public static final RegistryObject<Item> TRADE = REGISTRY.register("trade", () -> new TradeItem());
 	public static final RegistryObject<Item> PIGLIN_SELECTOR = REGISTRY.register("piglin_selector", () -> new PiglinSelectorItem());
+	public static final RegistryObject<Item> TELLURIUM = REGISTRY.register("tellurium", () -> new TelluriumItem());
+	public static final RegistryObject<Item> TELLURIUM_ORE = block(MobsBrawlModBlocks.TELLURIUM_ORE);
+
 	// Start of user code block custom items
 	// End of user code block custom items
+	private static RegistryObject<Item> block(RegistryObject<Block> block) {
+		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
+	}
 }
