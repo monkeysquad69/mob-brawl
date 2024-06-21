@@ -3,11 +3,11 @@
   "_type": "item",
   "definition": {
     "renderType": 0,
-    "texture": "creeper_selector",
+    "texture": "raw_tellirium",
     "customModelName": "Normal",
     "customProperties": {},
     "states": [],
-    "name": "Creeper Selector",
+    "name": "Tellurium",
     "rarity": "COMMON",
     "creativeTab": {
       "value": "CUSTOM:MobBrawl"
@@ -35,8 +35,8 @@
     "guiBoundTo": "<NONE>",
     "inventorySize": 9,
     "inventoryStackSize": 64,
-    "onRightClickedInAir": {
-      "name": "CreeperSelectorRightclicked"
+    "onItemInInventoryTick": {
+      "name": "TelluriumItemInInventoryTick"
     },
     "enableRanged": false,
     "shootConstantly": false,

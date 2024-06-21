@@ -4,29 +4,26 @@
  */
 package net.icefighter.mobsbrawl.init;
 
+import net.minecraftforge.registries.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.eventbus.api.SubscribeEvent;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 
-import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.network.chat.Component;
 import net.minecraft.core.registries.Registries;
 
 import net.icefighter.mobsbrawl.MobsBrawlMod;
 
-@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class MobsBrawlModTabs {
 	public static final DeferredRegister<CreativeModeTab> REGISTRY = DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MobsBrawlMod.MODID);
+	public static final RegistryObject<CreativeModeTab> MOB_BRAWL = REGISTRY.register("mob_brawl",
+			() -> CreativeModeTab.builder().title(Component.translatable("item_group.mobs_brawl.mob_brawl")).icon(() -> new ItemStack(MobsBrawlModItems.CREEPER_SELECTOR.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(MobsBrawlModItems.BLAZE_SELECTOR.get());
+				tabData.accept(MobsBrawlModBlocks.TELLURIUM_ORE.get().asItem());
+				tabData.accept(MobsBrawlModItems.TELLURIUM.get());
+				tabData.accept(MobsBrawlModItems.CREEPER_SELECTOR.get());
+				tabData.accept(MobsBrawlModItems.PIGLIN_SELECTOR.get());
+			})
 
-	@SubscribeEvent
-	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
-		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
-			tabData.accept(MobsBrawlModItems.BLAZE_SELECTOR.get());
-			tabData.accept(MobsBrawlModItems.FIREBOLT.get());
-			tabData.accept(MobsBrawlModItems.CREEPER_SELECTOR.get());
-			tabData.accept(MobsBrawlModItems.PIGLIN_SELECTOR.get());
-			tabData.accept(MobsBrawlModItems.TRADE.get());
-		}
-	}
+					.build());
 }

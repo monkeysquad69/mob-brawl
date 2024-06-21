@@ -10,7 +10,7 @@
     "name": "Trade",
     "rarity": "COMMON",
     "creativeTab": {
-      "value": "COMBAT"
+      "value": "No creative tab entry"
     },
     "stackSize": 1,
     "enchantability": 0,

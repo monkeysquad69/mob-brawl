@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "mobs_brawl:block/tellurium_ore",
+    "up": "mobs_brawl:block/tellurium_ore",
+    "north": "mobs_brawl:block/tellurium_ore",
+    "east": "mobs_brawl:block/tellurium_ore",
+    "south": "mobs_brawl:block/tellurium_ore",
+    "west": "mobs_brawl:block/tellurium_ore",
+    "particle": "mobs_brawl:block/tellurium_ore"
+  },
+  "render_type": "solid"
+}
