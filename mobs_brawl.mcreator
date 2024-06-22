@@ -411,6 +411,60 @@
       }
     },
     {
+      "name": "RegenRightclicked",
+      "type": "procedure",
+      "sortid": 19,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regen_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/RegenRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          }
+        ]
+      },
+      "path": "~/iron golem"
+    },
+    {
+      "name": "IronGolemSelector",
+      "type": "item",
+      "sortid": 18,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "iron_golem_selector",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mobs_brawl/models/item/iron_golem_selector.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/IronGolemSelectorItem.java"
+        ]
+      },
+      "path": "~/iron golem"
+    },
+    {
+      "name": "Regen",
+      "type": "item",
+      "sortid": 20,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "regen",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/item/RegenItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/regen.json"
+        ]
+      },
+      "path": "~/iron golem"
+    },
+    {
       "name": "IronGolemSelectorRightclicked",
       "type": "procedure",
       "sortid": 17,
@@ -449,60 +503,6 @@
         ]
       },
       "path": "~/iron golem"
-    },
-    {
-      "name": "IronGolemSelector",
-      "type": "item",
-      "sortid": 18,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "iron_golem_selector",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mobs_brawl/models/item/iron_golem_selector.json",
-          "src/main/java/net/icefighter/mobsbrawl/item/IronGolemSelectorItem.java"
-        ]
-      },
-      "path": "~/iron golem"
-    },
-    {
-      "name": "RegenRightclicked",
-      "type": "procedure",
-      "sortid": 19,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "regen_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/RegenRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          }
-        ]
-      },
-      "path": "~/iron golem"
-    },
-    {
-      "name": "Regen",
-      "type": "item",
-      "sortid": 20,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "regen",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/RegenItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/regen.json"
-        ]
-      },
-      "path": "~/iron golem"
     }
   ],
   "variable_elements": [],
@@ -533,11 +533,11 @@
     "name": "~",
     "children": [
       {
-        "name": "piglin",
+        "name": "iron golem",
         "children": []
       },
       {
-        "name": "blaze",
+        "name": "piglin",
         "children": []
       },
       {
@@ -545,7 +545,7 @@
         "children": []
       },
       {
-        "name": "iron golem",
+        "name": "blaze",
         "children": []
       }
     ]

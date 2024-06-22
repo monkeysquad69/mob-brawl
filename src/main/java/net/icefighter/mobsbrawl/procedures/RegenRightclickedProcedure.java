@@ -1,11 +1,6 @@
 package net.icefighter.mobsbrawl.procedures;
 
-import net.minecraft.world.level.GameType;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.entity.Entity;
-import net.minecraft.server.level.ServerPlayer;
-import net.minecraft.client.Minecraft;
+import net.minecraftforge.eventbus.api.Event;
 
 public class RegenRightclickedProcedure {
 	public static void execute(Entity entity, ItemStack itemstack) {

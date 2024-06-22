@@ -1,15 +1,7 @@
 
 package net.icefighter.mobsbrawl.item;
 
-import net.minecraft.world.level.Level;
-import net.minecraft.world.item.Rarity;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.entity.player.Player;
-import net.minecraft.world.InteractionResultHolder;
-import net.minecraft.world.InteractionHand;
-
-import net.icefighter.mobsbrawl.procedures.RegenRightclickedProcedure;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 
 public class RegenItem extends Item {
 	public RegenItem() {
