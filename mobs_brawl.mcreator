@@ -133,7 +133,32 @@
         "files": [
           "src/main/java/net/icefighter/mobsbrawl/procedures/CreeperSelectorRightclickedProcedure.java"
         ],
-        "dependencies": []
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
       }
     },
     {
@@ -396,8 +421,11 @@
     "en_us": {
       "item.mobs_brawl.blaze_selector": "Blaze Selector",
       "item.mobs_brawl.creeper_selector": "Creeper Selector",
+      "item.mobs_brawl.tellurium": "Tellurium",
+      "block.mobs_brawl.tellurium_ore": "Tellurium Ore",
       "item.mobs_brawl.trade": "Trade",
       "item.mobs_brawl.firebolt": "Firebolt",
+      "item_group.mobs_brawl.mob_brawl": "Mob Brawl",
       "item.mobs_brawl.piglin_selector": "Piglin Selector"
     }
   },
