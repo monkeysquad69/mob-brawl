@@ -14,7 +14,9 @@ import net.minecraft.world.item.BlockItem;
 
 import net.icefighter.mobsbrawl.item.TradeItem;
 import net.icefighter.mobsbrawl.item.TelluriumItem;
+import net.icefighter.mobsbrawl.item.RegenItem;
 import net.icefighter.mobsbrawl.item.PiglinSelectorItem;
+import net.icefighter.mobsbrawl.item.IronGolemSelectorItem;
 import net.icefighter.mobsbrawl.item.FireboltItem;
 import net.icefighter.mobsbrawl.item.CreeperSelectorItem;
 import net.icefighter.mobsbrawl.item.BlazeSelectorItem;
@@ -29,6 +31,8 @@ public class MobsBrawlModItems {
 	public static final RegistryObject<Item> PIGLIN_SELECTOR = REGISTRY.register("piglin_selector", () -> new PiglinSelectorItem());
 	public static final RegistryObject<Item> TELLURIUM_ORE = block(MobsBrawlModBlocks.TELLURIUM_ORE);
 	public static final RegistryObject<Item> TELLURIUM = REGISTRY.register("tellurium", () -> new TelluriumItem());
+	public static final RegistryObject<Item> IRON_GOLEM_SELECTOR = REGISTRY.register("iron_golem_selector", () -> new IronGolemSelectorItem());
+	public static final RegistryObject<Item> REGEN = REGISTRY.register("regen", () -> new RegenItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items

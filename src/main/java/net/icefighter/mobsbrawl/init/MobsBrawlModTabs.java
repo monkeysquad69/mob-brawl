@@ -23,6 +23,8 @@ public class MobsBrawlModTabs {
 				tabData.accept(MobsBrawlModItems.TELLURIUM.get());
 				tabData.accept(MobsBrawlModItems.CREEPER_SELECTOR.get());
 				tabData.accept(MobsBrawlModItems.PIGLIN_SELECTOR.get());
+				tabData.accept(MobsBrawlModItems.IRON_GOLEM_SELECTOR.get());
+				tabData.accept(MobsBrawlModItems.REGEN.get());
 			})
 
 					.build());
