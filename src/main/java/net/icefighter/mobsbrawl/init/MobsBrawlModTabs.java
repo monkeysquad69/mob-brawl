@@ -25,6 +25,7 @@ public class MobsBrawlModTabs {
 				tabData.accept(MobsBrawlModItems.TELLURIUM.get());
 				tabData.accept(MobsBrawlModItems.IRON_GOLEM_SELECTOR.get());
 				tabData.accept(MobsBrawlModItems.REGEN.get());
+				tabData.accept(MobsBrawlModItems.BOOM.get());
 			})
 
 					.build());

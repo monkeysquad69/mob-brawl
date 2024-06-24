@@ -9,17 +9,17 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.InteractionHand;
 
-import net.icefighter.mobsbrawl.procedures.IronGolemSelectorRightclickedProcedure;
+import net.icefighter.mobsbrawl.procedures.BoomRightclickedProcedure;
 
-public class IronGolemSelectorItem extends Item {
-	public IronGolemSelectorItem() {
+public class BoomItem extends Item {
+	public BoomItem() {
 		super(new Item.Properties().stacksTo(1).rarity(Rarity.COMMON));
 	}
 
 	@Override
 	public InteractionResultHolder<ItemStack> use(Level world, Player entity, InteractionHand hand) {
 		InteractionResultHolder<ItemStack> ar = super.use(world, entity, hand);
-		IronGolemSelectorRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
+		BoomRightclickedProcedure.execute(world, entity.getX(), entity.getY(), entity.getZ(), entity, ar.getObject());
 		return ar;
 	}
 }

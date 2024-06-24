@@ -19,6 +19,7 @@ import net.icefighter.mobsbrawl.item.PiglinSelectorItem;
 import net.icefighter.mobsbrawl.item.IronGolemSelectorItem;
 import net.icefighter.mobsbrawl.item.FireboltItem;
 import net.icefighter.mobsbrawl.item.CreeperSelectorItem;
+import net.icefighter.mobsbrawl.item.BoomItem;
 import net.icefighter.mobsbrawl.item.BlazeSelectorItem;
 import net.icefighter.mobsbrawl.MobsBrawlMod;
 
@@ -33,6 +34,7 @@ public class MobsBrawlModItems {
 	public static final RegistryObject<Item> CREEPER_SELECTOR = REGISTRY.register("creeper_selector", () -> new CreeperSelectorItem());
 	public static final RegistryObject<Item> IRON_GOLEM_SELECTOR = REGISTRY.register("iron_golem_selector", () -> new IronGolemSelectorItem());
 	public static final RegistryObject<Item> REGEN = REGISTRY.register("regen", () -> new RegenItem());
+	public static final RegistryObject<Item> BOOM = REGISTRY.register("boom", () -> new BoomItem());
 
 	// Start of user code block custom items
 	// End of user code block custom items
