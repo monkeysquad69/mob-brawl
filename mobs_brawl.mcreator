@@ -454,6 +454,61 @@
         ]
       },
       "path": "~/iron golem"
+    },
+    {
+      "name": "BoomRightclicked",
+      "type": "procedure",
+      "sortid": 21,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/BoomRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      },
+      "path": "~/creeper"
+    },
+    {
+      "name": "Boom",
+      "type": "item",
+      "sortid": 22,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "boom",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mobs_brawl/models/item/boom.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/BoomItem.java"
+        ]
+      },
+      "path": "~/creeper"
     }
   ],
   "variable_elements": [],
@@ -472,6 +527,7 @@
       "item.mobs_brawl.creeper_selector": "Creeper Selector",
       "item.mobs_brawl.tellurium": "Tellurium",
       "block.mobs_brawl.tellurium_ore": "Tellurium Ore",
+      "item.mobs_brawl.boom": "Boom",
       "item.mobs_brawl.trade": "Trade",
       "item.mobs_brawl.iron_golem_selector": "Iron Golem Selector",
       "item.mobs_brawl.regen": "Regen",
