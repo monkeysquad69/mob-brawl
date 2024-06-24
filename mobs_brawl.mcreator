@@ -1,9 +1,62 @@
 {
   "mod_elements": [
     {
+      "name": "BlazeSelector",
+      "type": "item",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_selector",
+      "metadata": {
+        "files": [
+          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java"
+        ]
+      }
+    },
+    {
+      "name": "BlazeSelectorRightclicked",
+      "type": "procedure",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "blaze_selector_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/BlazeSelectorRightclickedProcedure.java"
+        ],
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          },
+          {
+            "name": "itemstack",
+            "type": "itemstack"
+          },
+          {
+            "name": "x",
+            "type": "number"
+          },
+          {
+            "name": "y",
+            "type": "number"
+          },
+          {
+            "name": "z",
+            "type": "number"
+          },
+          {
+            "name": "world",
+            "type": "world"
+          }
+        ]
+      }
+    },
+    {
       "name": "FireboltRightclicked",
       "type": "procedure",
-      "sortid": 6,
+      "sortid": 4,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firebolt_rightclicked",
@@ -43,7 +96,7 @@
     {
       "name": "Firebolt",
       "type": "item",
-      "sortid": 7,
+      "sortid": 5,
       "compiles": true,
       "locked_code": false,
       "registry_name": "firebolt",
@@ -56,15 +109,29 @@
       "path": "~/blaze"
     },
     {
-      "name": "BlazeSelectorRightclicked",
-      "type": "procedure",
-      "sortid": 8,
+      "name": "CreeperSelector",
+      "type": "item",
+      "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "blaze_selector_rightclicked",
+      "registry_name": "creeper_selector",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/BlazeSelectorRightclickedProcedure.java"
+          "src/main/java/net/icefighter/mobsbrawl/item/CreeperSelectorItem.java",
+          "src/main/resources/assets/mobs_brawl/models/item/creeper_selector.json"
+        ]
+      }
+    },
+    {
+      "name": "CreeperSelectorRightclicked",
+      "type": "procedure",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "creeper_selector_rightclicked",
+      "metadata": {
+        "files": [
+          "src/main/java/net/icefighter/mobsbrawl/procedures/CreeperSelectorRightclickedProcedure.java"
         ],
         "dependencies": [
           {
@@ -92,28 +159,12 @@
             "type": "world"
           }
         ]
-      },
-      "path": "~/blaze"
-    },
-    {
-      "name": "BlazeSelector",
-      "type": "item",
-      "sortid": 2,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "blaze_selector",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/BlazeSelectorItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/blaze_selector.json"
-        ]
-      },
-      "path": "~/blaze"
+      }
     },
     {
       "name": "Trade",
       "type": "item",
-      "sortid": 9,
+      "sortid": 10,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trade",
@@ -128,7 +179,7 @@
     {
       "name": "TradeRightclicked",
       "type": "procedure",
-      "sortid": 10,
+      "sortid": 9,
       "compiles": true,
       "locked_code": false,
       "registry_name": "trade_rightclicked",
@@ -168,7 +219,7 @@
     {
       "name": "PiglinSelector",
       "type": "item",
-      "sortid": 3,
+      "sortid": 8,
       "compiles": true,
       "locked_code": false,
       "registry_name": "piglin_selector",
@@ -231,8 +282,8 @@
         "files": [
           "src/main/resources/assets/mobs_brawl/blockstates/tellurium_ore.json",
           "src/main/resources/data/mobs_brawl/loot_tables/blocks/tellurium_ore.json",
-          "src/main/java/net/icefighter/mobsbrawl/block/TelluriumOreBlock.java",
           "src/main/resources/assets/mobs_brawl/models/item/tellurium_ore.json",
+          "src/main/java/net/icefighter/mobsbrawl/block/TelluriumOreBlock.java",
           "src/main/resources/assets/mobs_brawl/models/block/tellurium_ore.json"
         ]
       }
@@ -274,6 +325,17 @@
             "type": "world"
           }
         ]
+      }
+    },
+    {
+      "name": "MobBrawl",
+      "type": "tab",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "mob_brawl",
+      "metadata": {
+        "files": []
       }
     },
     {
@@ -339,75 +401,9 @@
       "registry_name": "tellurium",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/TelluriumItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/tellurium.json"
+          "src/main/resources/assets/mobs_brawl/models/item/tellurium.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/TelluriumItem.java"
         ]
-      }
-    },
-    {
-      "name": "CreeperSelectorRightclicked",
-      "type": "procedure",
-      "sortid": 15,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "creeper_selector_rightclicked",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/CreeperSelectorRightclickedProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      },
-      "path": "~/creeper"
-    },
-    {
-      "name": "CreeperSelector",
-      "type": "item",
-      "sortid": 1,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "creeper_selector",
-      "metadata": {
-        "files": [
-          "src/main/resources/assets/mobs_brawl/models/item/creeper_selector.json",
-          "src/main/java/net/icefighter/mobsbrawl/item/CreeperSelectorItem.java"
-        ]
-      },
-      "path": "~/creeper"
-    },
-    {
-      "name": "MobBrawl",
-      "type": "tab",
-      "sortid": 16,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "mob_brawl",
-      "metadata": {
-        "files": []
       }
     },
     {
@@ -458,8 +454,8 @@
       "registry_name": "regen",
       "metadata": {
         "files": [
-          "src/main/java/net/icefighter/mobsbrawl/item/RegenItem.java",
-          "src/main/resources/assets/mobs_brawl/models/item/regen.json"
+          "src/main/resources/assets/mobs_brawl/models/item/regen.json",
+          "src/main/java/net/icefighter/mobsbrawl/item/RegenItem.java"
         ]
       },
       "path": "~/iron golem"
@@ -578,8 +574,6 @@
       "block.mobs_brawl.tellurium_ore": "Tellurium Ore",
       "item.mobs_brawl.boom": "Boom",
       "item.mobs_brawl.trade": "Trade",
-      "item.mobs_brawl.iron_golem_selector": "Iron Golem Selector",
-      "item.mobs_brawl.regen": "Regen",
       "item.mobs_brawl.firebolt": "Firebolt",
       "item_group.mobs_brawl.mob_brawl": "Mob Brawl",
       "item.mobs_brawl.piglin_selector": "Piglin Selector"
