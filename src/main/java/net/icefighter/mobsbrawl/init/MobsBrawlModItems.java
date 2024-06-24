@@ -25,13 +25,13 @@ import net.icefighter.mobsbrawl.MobsBrawlMod;
 
 public class MobsBrawlModItems {
 	public static final DeferredRegister<Item> REGISTRY = DeferredRegister.create(ForgeRegistries.ITEMS, MobsBrawlMod.MODID);
-	public static final RegistryObject<Item> BLAZE_SELECTOR = REGISTRY.register("blaze_selector", () -> new BlazeSelectorItem());
 	public static final RegistryObject<Item> FIREBOLT = REGISTRY.register("firebolt", () -> new FireboltItem());
-	public static final RegistryObject<Item> CREEPER_SELECTOR = REGISTRY.register("creeper_selector", () -> new CreeperSelectorItem());
+	public static final RegistryObject<Item> BLAZE_SELECTOR = REGISTRY.register("blaze_selector", () -> new BlazeSelectorItem());
 	public static final RegistryObject<Item> TRADE = REGISTRY.register("trade", () -> new TradeItem());
 	public static final RegistryObject<Item> PIGLIN_SELECTOR = REGISTRY.register("piglin_selector", () -> new PiglinSelectorItem());
 	public static final RegistryObject<Item> TELLURIUM_ORE = block(MobsBrawlModBlocks.TELLURIUM_ORE);
 	public static final RegistryObject<Item> TELLURIUM = REGISTRY.register("tellurium", () -> new TelluriumItem());
+	public static final RegistryObject<Item> CREEPER_SELECTOR = REGISTRY.register("creeper_selector", () -> new CreeperSelectorItem());
 	public static final RegistryObject<Item> IRON_GOLEM_SELECTOR = REGISTRY.register("iron_golem_selector", () -> new IronGolemSelectorItem());
 	public static final RegistryObject<Item> REGEN = REGISTRY.register("regen", () -> new RegenItem());
 	public static final RegistryObject<Item> BOOM = REGISTRY.register("boom", () -> new BoomItem());
