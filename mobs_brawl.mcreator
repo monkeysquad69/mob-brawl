@@ -184,9 +184,6 @@
       "locked_code": false,
       "registry_name": "trade_rightclicked",
       "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/TradeRightclickedProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "entity",
@@ -289,45 +286,6 @@
       }
     },
     {
-      "name": "AntiDrop",
-      "type": "procedure",
-      "sortid": 12,
-      "compiles": true,
-      "locked_code": false,
-      "registry_name": "anti_drop",
-      "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/AntiDropProcedure.java"
-        ],
-        "dependencies": [
-          {
-            "name": "entity",
-            "type": "entity"
-          },
-          {
-            "name": "itemstack",
-            "type": "itemstack"
-          },
-          {
-            "name": "x",
-            "type": "number"
-          },
-          {
-            "name": "y",
-            "type": "number"
-          },
-          {
-            "name": "z",
-            "type": "number"
-          },
-          {
-            "name": "world",
-            "type": "world"
-          }
-        ]
-      }
-    },
-    {
       "name": "MobBrawl",
       "type": "tab",
       "sortid": 16,
@@ -369,9 +327,6 @@
       "locked_code": false,
       "registry_name": "tellurium_ore_block_destroyed_by_player",
       "metadata": {
-        "files": [
-          "src/main/java/net/icefighter/mobsbrawl/procedures/TelluriumOreBlockDestroyedByPlayerProcedure.java"
-        ],
         "dependencies": [
           {
             "name": "x",
@@ -518,6 +473,8 @@
       "item.mobs_brawl.tellurium": "Tellurium",
       "block.mobs_brawl.tellurium_ore": "Tellurium Ore",
       "item.mobs_brawl.trade": "Trade",
+      "item.mobs_brawl.iron_golem_selector": "Iron Golem Selector",
+      "item.mobs_brawl.regen": "Regen",
       "item.mobs_brawl.firebolt": "Firebolt",
       "item_group.mobs_brawl.mob_brawl": "Mob Brawl",
       "item.mobs_brawl.piglin_selector": "Piglin Selector"
